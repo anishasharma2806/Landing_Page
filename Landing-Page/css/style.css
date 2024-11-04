@@ -1,0 +1,453 @@
+@font-face {
+  font-family: Doisis;
+  src: url(../Fonts/Dosis-Regular.ttf);
+}
+
+@font-face {
+  font-family: Doisis;
+  src: url(../Fonts/Dosis-Medium.ttf);
+}
+
+@font-face {
+  font-family: Doisis;
+  src: url(../Fonts/Dosis-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+}
+
+
+
+.box-logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-logo .middle {
+  text-align: center;
+  width: 14%;
+  border-bottom: 8px double #fddc5c;
+  position: relative;
+  top: 6px;
+  border-radius: 19px;
+}
+.box-logo img {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+}
+.first,
+.last {
+  width: 65%;
+  border-bottom: 8px double #fddc5c;
+  position: relative;
+}
+
+.middle:hover img {
+  transform: scale(1.13);
+  transition: 0.5s;
+}
+
+.middle:hover {
+  position: relative;
+  top: 14px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.first {
+  border-bottom-right-radius: 3px;
+}
+
+.last {
+  border-bottom-left-radius: 3px;
+}
+
+.content {
+  height: 100vh;
+}
+
+.top-part {
+  height: 48%;
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20231030/pngtree-refreshing-green-leaf-background-a-beautiful-display-of-nature-image_13764680.png);
+  background-size: auto;
+  margin-top: -90px;
+}
+
+.bottom-part {
+  display: flex;
+  background-color: #c1e089;
+  height: 52.8%;
+}
+
+.form-info {
+  width: 50%;
+  margin-top: 50px;
+}
+
+form {
+  margin-left: 150px;
+}
+
+.form-title {
+  font-size: 21px;
+  font-weight: 700;
+  position: relative;
+  top: -15px;
+  color: rgb(43, 43, 43);
+}
+
+.fa-check-circle {
+  color: #21533c;
+}
+
+.style-input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(160, 160, 160);
+  width: 170px;
+  height: 28px;
+  border-radius: 1px;
+  padding-left: 10px;
+  margin-top: 3px;
+}
+
+.inputs {
+  margin-bottom: 10px;
+  width: 535px;
+}
+
+input::placeholder {
+  font-size: 12px;
+  color: rgb(117, 117, 117);
+}
+
+form div.inputs:first-of-type {
+  margin-top: 8px;
+}
+
+form div.inputs:last-of-type {
+  margin-bottom: 20px;
+}
+
+.inputs label {
+  color: rgb(53, 53, 53);
+}
+
+.fa-star {
+  color: rgb(255, 0, 0);
+  font-size: 8px;
+  margin-left: 2px;
+}
+
+.inputs span {
+  color: red;
+}
+
+form button {
+  padding: 10px 16px;
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 3px;
+  background: #21533c;
+  color: #ffffff;
+}
+
+form button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: 0.5s;
+}
+
+.span-submit {
+  color: red;
+}
+
+.main-text {
+  width: 44%;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.main-text h1 {
+  margin-top: -20px;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+
+.main-text h3 {
+  margin-left: 12px;
+  font-weight: 400;
+  color: rgb(90, 90, 90);
+  font-size: 16px;
+}
+
+.main-text p {
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 12px;
+  line-height: 25px;
+  font-weight: 500;
+  text-align: justify;
+}
+/*Responsive Code*/
+
+@media (hover: hover) and (pointer: fine) {
+  .middle:hover img {
+    transform: scale(1.13);
+    transition: 0.5s;
+  }
+
+  .middle:hover {
+    position: relative;
+    top: 5px; 
+    border-radius: 12px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+    form{
+        margin-left: 37px;
+    }
+
+    .form-info{
+        width: 45%;
+    }
+
+    .form-title{
+        font-size: 18px;
+    }
+
+    .inputs span{
+        font-size: 13px;
+    }
+
+    .span-submit{
+        display: block;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+
+    .main-text{
+        margin-left: 46px;
+    }
+
+    .main-text h1{
+        font-size: 33px;
+    }
+
+    .main-text p{
+        width: 248px;
+    }
+
+    .middle:hover img {
+      transform: scale(1.15);
+      transition: 0.5s;
+    }
+
+    .middle:hover {
+      position: relative;
+      top: 10px; 
+      border-radius: 25px; 
+      transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 835px) and (min-width:680px) {
+    form{
+        margin-left: 33px;
+    }
+
+    .form-title{
+        position: relative;
+        top: -6px;
+    }
+
+    form div inputs:first-of-type{
+        margin-top: 40px;
+    }
+    
+    .main-text{
+        margin-left: 103px;
+    }
+
+    .middle:hover img {
+      transform: scale(1.13);
+      transition: 0.5s;
+    }
+
+    .middle:hover {
+      position: relative;
+      top: 9px; 
+      border-radius: 22px; 
+      transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .box-logo .middle{
+        width: 16%;
+    }
+
+    .first, .last{
+        border-bottom: 7px double #fddc5c;
+    }
+    .bottom-part{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .form-info{
+        position: absolute;
+        top: 277px;
+        left: 17%;
+        width: 80%;
+    }
+
+    form{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .inputs span{
+        font-size: 14px;
+    }
+
+    .span-submit{
+        font-size: 14px;
+    }
+
+    .inputs{
+        width: 200px;
+    }
+    .main-text{
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+    }
+
+    .main-text h1{
+        font-size: 39px;
+    }
+
+    .main-text h3{
+        font-size: 17px;
+    }
+
+    .main-text p{
+        width: 254px;
+        font-size: 17px;
+        border-bottom: 3px solid red;
+        padding-bottom: 38px;
+    }
+
+    .middle:hover img {
+      transform: scale(1.25);
+      transition: 0.5s;
+    }
+
+    .middle:hover {
+      position: relative;
+      top: 8px; 
+      border-radius: 20px; 
+      transition: 0.5s;
+    }
+}
+@media screen and (max-width:542px) {
+    .box-logo .middle{
+        width: 20%;
+    }
+    .form-info{
+        width: 66%;
+    }
+
+    form{
+        margin-left: 41px;
+    }
+
+    .form-title{
+        line-height: 29px;
+    }
+
+    .inputs span{
+        font-size: 13px; 
+    }
+
+    .span-submit{
+        font-size: 13px;
+    }
+
+    .main-text h1{
+        font-size: 36px;
+    }
+
+    .main-text p{
+        font-size: 16px;
+    }
+    
+    .middle:hover img {
+      transform: scale(1.25); 
+      transition: 0.5s;
+    }
+
+    .middle:hover {
+      position: relative;
+      top: 6px; 
+      border-radius: 15px; 
+      transition: 0.5s;
+    }
+}
+
+@media screen and (max-width:412px) {
+  .box-logo .middle{
+    width: 22%;
+  }
+  form{
+    margin-left: 26px;
+  }
+
+  .form-title{
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .main-text h1{
+    font-size: 32px;
+    margin-left: 10px;
+  }
+
+  .main-text p{
+    width: 270px;
+
+  }
+
+  .middle:hover img {
+    transform: scale(1.3);
+    transition: 0.5s;
+  }
+
+  .middle:hover {
+    position: relative;
+    top: 5px; 
+    border-radius: 12px;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width:390px) {
+
+  .box-logo .middle{
+    width: 24%;
+  }
+  
+  form{
+    margin-left: 12px;
+  }
+}
